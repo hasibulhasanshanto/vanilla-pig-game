@@ -17,7 +17,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
         // 2.Display The number
         var diceDom = document.querySelector('.dice');
         diceDom.style.display = 'block';
-        diceDom.src = 'dice-' + dice + '.png';
+        diceDom.src = 'dice-' + dice + '.webp';
 
         // 3. Update the number if score was not 1
 
@@ -48,7 +48,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
         //document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
 
         // Check if the player Won the Game.. Show winners!!!!!!!!
-        if (scores[activePlayer] >= 20) {
+        if (scores[activePlayer] >= 100) {
             document.querySelector('#name-' + activePlayer).textContent = 'Winner !!!';
             document.querySelector('.dice').style.display = 'none';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
